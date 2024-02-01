@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 
 // hello world route
 app.get('/api', (req, res) => {
+    //Send hello world if api response is succesful
     res.send('Hello World!');
 });
 
@@ -52,6 +53,7 @@ app.get('/api/v1/pets/:name', (req, res) => {
     res.send(pet)
 });
 
+//Determines what the localhost number is, consoles logs to confirm what the number is.
 app.listen(PORT, () => {
     console.log('Server is listening on port ' + PORT);
 });
